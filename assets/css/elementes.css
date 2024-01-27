@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     }
     html {
         font-size: 62.5%;
@@ -49,7 +50,7 @@
         text-decoration: none;
      }
      p {
-      font-size: 2rem;
+      font-size: 1rem;
      }
 
      .responsive-table{
@@ -79,5 +80,7 @@
      tfoot td, table th {
       background: var(--light-gray-color);
      }
+
+     
 
    
