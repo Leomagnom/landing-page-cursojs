@@ -17,6 +17,7 @@ font-family: 'Sriracha', cursive;
     z-index: 1;
     border-bottom: 0.1rem solid var(--light-gray-color);
     }
+  
     .menu-content {
         display: flex;
         justify-content: space-between;
@@ -40,6 +41,7 @@ font-family: 'Sriracha', cursive;
         display: block; 
         padding: 2rem;
         font-size: 1.8rem;
+        color: var(--primary-color);
         position: relative;
     }
     .menu ul li a::after {

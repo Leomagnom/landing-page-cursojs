@@ -1,21 +1,21 @@
 .intro-content {
   position: relative;
-  /* top: -7rem; */
+  /* top: -8rem; */
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
   min-height: 100vh;
 }
-.intro-text-content,
-.intro-img {
+.intro-text-content,.intro-img {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
 }
-.intro-text-content p {
+/* .intro-text-content p {
   font-size: 1rem;
-}
-.intro-img img {
+} */
+.intro-img img,
+.intro-img svg {
   max-width: 100%;
   height: auto;
 }
@@ -31,25 +31,30 @@
   text-align: center;
 }
 
-.grid-main-heading {
-  margin-bottom: 1rem;
-}
-.grid-description {
-  padding-bottom: 5rem;
-}
-
 .grid-one-content {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   min-height: 100vh;
 }
+
+
+.grid-main-heading {
+  margin-bottom: 1rem;
+}
+
+.grid-description {
+  padding-bottom: 5rem;
+}
+
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
   counter-reset: grid-counter;
 }
+
 .grid h3 {
   font-size: 3rem;
   position: relative;
@@ -61,7 +66,7 @@
   counter-increment: grid-counter;
   content: counter(grid-counter);
   position: absolute;
-  font-size: 7rem;
+  font-size: 8rem;
   font-style: italic;
   top: -4rem;
   left: -2rem;
@@ -79,7 +84,7 @@
 }
 
 .gallery-img img:hover {
-  transform: translate(-3%, 3%) scale(1.2) rotate(3deg);
+  transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
 
 .contact-form {
@@ -154,6 +159,7 @@
 .close-menu {
 display: none;
 }
+
 .back-to-top {
   position: fixed;
   bottom: 2rem;
@@ -171,6 +177,8 @@ display: none;
 }
 
 
+
+
 @media (max-width: 800px) {
   .intro-content, .grid {
     grid-template-columns: 1fr;
@@ -179,11 +187,11 @@ display: none;
 .gallery-img {
   width: 100%;
   max-width: 100%;
-  max-height: 100%o;
+  max-height: 100%;
 }
 
 .gallery-img img {
-  width:100%;
+  width: 100%;
 }
 
 .gri-one-content {
@@ -195,14 +203,15 @@ display: none;
 }
 .menu-content,.menu-content ul {
   flex-direction: column; 
-  justify-content: center;
+  justify-content: center !important;
 }
 .menu-content {
-  height:100
+  height: 100vh;
 }
 .menu {
   display: none;
 }
+
 
 .close-menu-label::after {
   content: '☰';
